@@ -1,5 +1,5 @@
 {
-  "name": "@heavy-duty/wallet-adapter",
+  "name": "@utisha/wallet-adapter",
   "version": "0.12.0",
   "peerDependencies": {},
   "dependencies": {

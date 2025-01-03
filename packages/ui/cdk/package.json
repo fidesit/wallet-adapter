@@ -1,5 +1,5 @@
 {
-  "name": "@heavy-duty/wallet-adapter-cdk",
+  "name": "@utisha/wallet-adapter-cdk",
   "version": "0.12.0",
   "peerDependencies": {},
   "dependencies": {
@@ -10,7 +10,7 @@
     "@solana/web3.js": "^1.95.3",
     "@solana/wallet-adapter-base": "^0.9.23",
     "rxjs": "~7.8.0",
-    "@heavy-duty/wallet-adapter": "0.12.0"
+    "@utisha/wallet-adapter": "0.12.0"
   },
   "sideEffects": false
 }
