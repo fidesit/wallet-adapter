@@ -132,13 +132,11 @@ const initialState: {
 
 @Injectable()
 export class WalletStore extends ComponentStore<WalletState> {
-  private readonly _name = new LocalStorageSubject<WalletName>(
-    this._config.localStorageKey
-  );
+  private readonly _name:LocalStorageSubject<WalletName>;
   private readonly _unloading$ = this.select(({ unloading }) => unloading);
   private readonly _adapters$ = this.select(({ adapters }) => adapters);
   private readonly _adapter$ = this.select(({ adapter }) => adapter);
-  private readonly _name$ = this._name.asObservable();
+  private readonly _name$: Observable<WalletName|null>;
   private readonly _readyState$ = this.select(({ readyState }) => readyState);
 
   readonly autoConnect$ = this.select(({ autoConnect }) => autoConnect);
@@ -197,7 +195,10 @@ export class WalletStore extends ComponentStore<WalletState> {
       readyState: null,
       error: null,
     });
-
+    this._name = new LocalStorageSubject<WalletName>(
+      _config.localStorageKey
+    );
+    this._name$ = this._name.asObservable();
     this.setAdapters(this._config.adapters);
   }
 
