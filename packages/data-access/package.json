@@ -1,6 +1,6 @@
 {
   "name": "@heavy-duty/wallet-adapter",
-  "version": "0.10.0",
+  "version": "0.12.0",
   "peerDependencies": {},
   "dependencies": {
     "@angular/core": "^19.0.0",

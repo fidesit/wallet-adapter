@@ -1,6 +1,6 @@
 {
   "name": "@heavy-duty/wallet-adapter-cdk",
-  "version": "0.10.0",
+  "version": "0.12.0",
   "peerDependencies": {},
   "dependencies": {
     "@angular/core": "^19.0.0",
@@ -10,7 +10,7 @@
     "@solana/web3.js": "^1.95.3",
     "@solana/wallet-adapter-base": "^0.9.23",
     "rxjs": "~7.8.0",
-    "@heavy-duty/wallet-adapter": "0.10.0"
+    "@heavy-duty/wallet-adapter": "0.12.0"
   },
   "sideEffects": false
 }
